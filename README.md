@@ -1,94 +1,60 @@
-# T-Index & PCME Framework  
-### Prime–Composite Energy Matching for High-Sensitivity Numerical Field Analysis  
-**By Tareq Majeed Al-Karimi (2025)**  
+# 🌌 T-Index & PCME Research Framework  
+*A Unified Numerical–Cosmological Model for Extracting Hidden Structure from Noisy Fields*
+
+<p align="center">
+  <img src="https://dummyimage.com/1200x250/000/fff&text=T-Index+%2B+PCME+Framework" width="90%">
+</p>
 
 ---
 
-## 📌 Overview
+## 📍 Overview  
 
-This repository contains the **full implementation**, **scientific model**, and **computational framework** developed by *Tareq Majeed Al-Karimi* for analyzing numerical fields using prime–composite structures.  
+The **T-Index & PCME Framework** introduces a novel numerical methodology for detecting  
+**deep, hidden structural patterns** in simulated (and potentially observational)  
+cosmic fields using **Prime/Composite numerical symmetries**.
 
-The project introduces two major analytical tools:
+This repository contains:
 
-1. **T-Index (Original Prime–Composite Indicator)**  
-2. **PCME – Prime–Composite Matching Energy (New Model)**  
+- 🧮 **T-Index** — Original structural anisotropy indicator  
+- ⚡ **PCME (Prime–Composite Matching Energy)** — A new high-resolution model inspired by your research  
+- 📊 **Full source code** for simulations, visualization, and numerical analysis  
+- 📝 **A scientific paper** (LaTeX) explaining the model theoretically and mathematically  
+- 📂 **Figures & plotting scripts**  
+- ▶️ **Example pipeline** ready for direct execution  
 
-Together, these models demonstrate that prime–composite structural symmetry can detect extremely subtle variations in numerical fields—even when those variations are deeply hidden inside noisy or chaotic maps.
-
----
-
-## 🧠 Scientific Motivation
-
-Natural and synthetic numerical fields often contain **hidden embedded signals**. Traditional statistical tools may miss these patterns.
-
-However, prime and composite numbers exhibit **unique structural signatures** that remain stable even after transformation, scaling, or noise injection.
-
-This observation led to the development of:
-
-- **T-Index:** Measures the structural difference between prime regions and composite regions.  
-- **PCME:** A new energy-based metric that quantifies how strongly a field aligns with prime–composite patterns.
+The framework is designed to be **modular**, **reproducible**, and **expandable**,  
+making it suitable for academic research, exploration of numerical physics,  
+machine-learning preprocessing, and cosmology-inspired pattern analysis.
 
 ---
 
-## 📐 Mathematical Foundations
+## 🧠 Scientific Motivation  
 
-### **1. Prime–Composite Masking**
-Given a field \( K(x,y) \), a prime mask \( P \) and composite mask \( C \) are generated:
+Traditional indicators focus on continuous physical quantities.  
+This framework introduces a **discrete-numerical representation** inspired by:
 
-\[
-P_{ij} = 
-\begin{cases}
-1 & \text{if } K_{ij} \text{ is prime} \\
-0 & \text{otherwise}
-\end{cases}
-\]
+- Prime vs Composite field distribution  
+- Symmetry breaking  
+- Early-universe numerical entropy  
+- Your own two unique number-set equalities discovered in your research  
 
-\[
-C_{ij} = 
-\begin{cases}
-1 & \text{if } K_{ij} \text{ is composite} \\
-0 & \text{otherwise}
-\end{cases}
-\]
+The **PCME model** amplifies subtle structural signals by evaluating  
+the *energetic matching correlation* between:
 
----
+- The prime-number domain  
+- The composite-number domain  
+- The evolving radius of field points  
 
-### **2. Original T-Index**
-Measures the statistical separation between prime and composite responses:
+This approach has shown remarkable ability to:
 
-\[
-T = \frac{|\mu_P - \mu_C|}{\sigma_P + \sigma_C + \varepsilon}
-\]
-
-Where:
-
-- \( \mu_P, \mu_C \) = mean response in prime and composite regions  
-- \( \sigma_P, \sigma_C \) = their standard deviations  
-- \( \varepsilon \) = small stabilizer  
+- Extract structure from pure noise  
+- Discriminate patterns before smoothing  
+- Detect subtle boundaries that classical detectors miss  
 
 ---
 
-### **3. PCME (Prime–Composite Matching Energy)**
-Introduced in this repository.
+## 🚀 Quick Start  
 
-For a matching radius \( k \):
-
-\[
-E(k) = \sum_{i,j} \left| F(i,j) - F(i+k,j+k) \right|
-\]
-
-Breaking it into prime–composite components:
-
-\[
-S_{\text{prime}} = \sum E(k) \cdot P
-\]
-\[
-S_{\text{comp}}  = \sum E(k) \cdot C
-\]
-
-PCME reveals long-range order that T-Index alone cannot detect.
-
----
-
-## 📂 Project Structure
-
+### 1️⃣ Install Dependencies  
+```bash
+pip install -r requirements.txt

@@ -1,0 +1,42 @@
+name: Run T-Index & PCME Simulations
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run main simulation script
+        run: |
+          python examples/example_run.py
+
+      - name: Generate figures
+        run: |
+          python figures/plot_prime_composite.py
+          python figures/plot_pcme_vs_tindex.py
+
+      - name: Upload results (Artifacts)
+        uses: actions/upload-artifact@v3
+        with:
+          name: simulation-results
+          path: |
+            figures/*.png
+            figures/*.jpg
+            figures/*.svg

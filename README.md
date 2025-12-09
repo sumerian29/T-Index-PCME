@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1112886366.svg)](https://doi.org/10.5281/zenodo.17865257)
+
 ## 🔷 T-Index (Cosmic Structure Indicator)
 
 The **T-Index** quantifies *structural anisotropy* within noisy or simulated cosmic fields.  

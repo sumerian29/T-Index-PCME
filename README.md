@@ -1,60 +1,105 @@
-# 🌌 T-Index & PCME Research Framework  
-*A Unified Numerical–Cosmological Model for Extracting Hidden Structure from Noisy Fields*
+## 🔷 T-Index (Cosmic Structure Indicator)
 
-<p align="center">
-  <img src="https://dummyimage.com/1200x250/000/fff&text=T-Index+%2B+PCME+Framework" width="90%">
-</p>
+The **T-Index** quantifies *structural anisotropy* within noisy or simulated cosmic fields.  
+It operates by comparing directional correlations and measuring how structural information  
+varies between different geometric directions.
 
----
-
-## 📍 Overview  
-
-The **T-Index & PCME Framework** introduces a novel numerical methodology for detecting  
-**deep, hidden structural patterns** in simulated (and potentially observational)  
-cosmic fields using **Prime/Composite numerical symmetries**.
-
-This repository contains:
-
-- 🧮 **T-Index** — Original structural anisotropy indicator  
-- ⚡ **PCME (Prime–Composite Matching Energy)** — A new high-resolution model inspired by your research  
-- 📊 **Full source code** for simulations, visualization, and numerical analysis  
-- 📝 **A scientific paper** (LaTeX) explaining the model theoretically and mathematically  
-- 📂 **Figures & plotting scripts**  
-- ▶️ **Example pipeline** ready for direct execution  
-
-The framework is designed to be **modular**, **reproducible**, and **expandable**,  
-making it suitable for academic research, exploration of numerical physics,  
-machine-learning preprocessing, and cosmology-inspired pattern analysis.
+This makes the T-Index particularly useful in scenarios where a field contains  
+weak or hidden directional patterns that typical statistical tools fail to detect.
 
 ---
 
-## 🧠 Scientific Motivation  
+## 🔶 PCME (Prime–Composite Matching Energy)
 
-Traditional indicators focus on continuous physical quantities.  
-This framework introduces a **discrete-numerical representation** inspired by:
+The **PCME model**, developed as part of this framework, introduces a new approach  
+to numerical structural detection by leveraging number-theoretic geometry.
 
-- Prime vs Composite field distribution  
-- Symmetry breaking  
-- Early-universe numerical entropy  
-- Your own two unique number-set equalities discovered in your research  
+PCME combines:
 
-The **PCME model** amplifies subtle structural signals by evaluating  
-the *energetic matching correlation* between:
+- **K-radius spherical geometry**
+- **Prime number masks**
+- **Composite number masks**
+- **Shell-based matching energy evaluation**
 
-- The prime-number domain  
-- The composite-number domain  
-- The evolving radius of field points  
+The resulting metric measures the **energy symmetry** between prime-indexed and  
+composite-indexed shells, revealing fine-grained structure that is not accessible  
+through standard correlation-based indicators.
 
-This approach has shown remarkable ability to:
+PCME is especially powerful for:
 
-- Extract structure from pure noise  
-- Discriminate patterns before smoothing  
-- Detect subtle boundaries that classical detectors miss  
+- detecting faint embedded patterns,  
+- analyzing irregular boundaries,  
+- and revealing deep structural symmetry in simulated universes.
 
 ---
 
-## 🚀 Quick Start  
+## 📈 Generating Scientific Figures
 
-### 1️⃣ Install Dependencies  
+The repository includes figure-generation scripts.  
+To create all scientific plots, run:
+
 ```bash
-pip install -r requirements.txt
+python figures/plot_prime_composite.py
+python figures/plot_pcme_vs_tindex.py
+These scripts generate:
+
+Prime/Composite dominion structure maps
+
+PCME vs T-Index comparison charts
+
+Field energy evolution visualizations
+
+All figures are reproducible and suitable for academic publications.
+
+🎯 Research Applications
+This framework opens doors to several research domains:
+
+🌌 Cosmological Physics
+Early-universe pattern detection
+
+Anisotropy and symmetry studies
+
+Comparison with CMB or B-mode–like structures
+
+🔬 Numerical & Applied Mathematics
+Noise-invariant pattern extraction
+
+Prime–composite structural analysis
+
+High-resolution energy mapping
+
+🧠 Machine Learning & AI
+Symmetry-informed feature engineering
+
+Preprocessing tools for physical datasets
+
+🔐 Cryptography & Randomness
+Symmetry-based randomness diagnostics
+
+Foundations for new encryption paradigms
+
+🧩 Discrete Mathematical Exploration
+Investigating hidden number-symmetries
+
+Studying prime–composite structural balance
+
+📜 Citation
+If this framework contributes to your research, please cite:
+
+bibtex
+Copy code
+@misc{tindex_pcme_2025,
+  author = {Tareq Majeed Al-Karimi},
+  title = {T-Index & PCME: Unified Framework for Numerical–Cosmological Pattern Detection},
+  year = {2025},
+  url = {https://github.com/sumerian29/T-Index-PCME}
+}
+🛡 License
+This project is licensed under the MIT License,
+allowing free academic, commercial, and research use with attribution.
+
+🤝 Collaboration & Contact
+For scientific collaboration, inquiries, or joint research opportunities:
+
+Author: Tareq Majeed Al-Karimi
+GitHub: https://github.com/sumerian29

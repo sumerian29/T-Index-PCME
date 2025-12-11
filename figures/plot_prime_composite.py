@@ -23,5 +23,4 @@ plt.legend()
 plt.grid()
 
 plt.savefig("prime_composite_symmetry.png", dpi=300)
-plt.show()
 print("Saved plot_prime_composite.png successfully")

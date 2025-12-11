@@ -20,5 +20,4 @@ plt.grid(axis='y')
 plt.legend()
 
 plt.savefig("pcme_vs_tindex.png", dpi=300)
-plt.show()
 print("Saved plot_pcme_vs_tindex.png successfully")

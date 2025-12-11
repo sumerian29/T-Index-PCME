@@ -5,38 +5,57 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  # يسمح لك بتشغيل الـ workflow يدويًا من صفحة Actions
+  workflow_dispatch:
 
 jobs:
   simulate:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. تحميل ملفات المستودع في بيئة GitHub Actions
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. إعداد Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
+          cache: 'pip'
 
+      # 3. تنصيب الحزم
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          # إذا كان هناك requirements.txt استخدمه
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # للتأكد أن أهم المكتبات موجودة حتى لو لم تُذكر في requirements.txt
+          pip install numpy scipy matplotlib sympy
 
-      - name: Run main simulation script
+      # 4. تشغيل كود المحاكاة الرئيسي
+      - name: Run main simulation (T-Index & PCME)
+        env:
+          MPLBACKEND: Agg     # لتفادي مشاكل الواجهة الرسومية في السيرفر
         run: |
           python examples/example_run.py
 
+      # 5. توليد الرسومات
       - name: Generate figures
+        env:
+          MPLBACKEND: Agg
         run: |
           python figures/plot_prime_composite.py
           python figures/plot_pcme_vs_tindex.py
 
+      # 6. رفع نتائج الرسومات كـ Artifacts يمكن تحميلها من صفحة Actions
       - name: Upload results (Artifacts)
-        uses: actions/upload-artifact@v3
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: simulation-results
           path: |
             figures/*.png
             figures/*.jpg
             figures/*.svg
+          if-no-files-found: ignore
